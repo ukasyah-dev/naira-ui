@@ -1,0 +1,11 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    uses: ukasyah-dev/actions/.github/workflows/deploy-github-pages.yml@main
+    secrets: inherit
